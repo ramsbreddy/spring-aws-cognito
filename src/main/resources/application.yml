@@ -1,0 +1,17 @@
+logging:
+  level:
+    ROOT: DEBUG
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_njRGb4lca
+com:
+  ixortalk:
+    security:
+      jwt:
+        aws:
+          userPoolId: us-east-1_njRGb4lca
+         # identityPoolId: "us-east-1:c3c7a168-9f96-42ed-baad-fefea03ac74f"
+          region: "us-east-1"
